@@ -10,7 +10,6 @@ def my_requests():
     store=data1["availableCourses"]
     id =[]
     name=[]
-    
     for i in range (len(store)):
     
         print(i+1,store[i]["name"],end="--")
@@ -45,7 +44,6 @@ def my_requests():
         print(count,var["name"])
         slug.append(var["slug"])
         count+=1
-
         for child in  var["childExercises"]:
             print(" ",count,child[name])
             slug.append(child["slug"])
